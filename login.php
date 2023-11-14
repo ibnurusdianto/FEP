@@ -91,7 +91,7 @@
                     <input type="password" class="form-control form-control-lg bg-light fs-6" placeholder="Password">
                 </div>
                 <div class="row">
-                    <small>Don't have account? <a href="#" class="btn btn-danger" role="button">Forgot Password</a></small>
+                    <small>Forgot password? <a href="#" class="btn btn-danger" role="button">Forgot Password</a></small>
                 </div>
             </div>
             <div class="input-group mb-3">
