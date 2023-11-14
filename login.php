@@ -45,8 +45,8 @@
                 </li>
             </ul>
             <a href="login.php" class="btn btn-success" role="button">Login</a>
-            <a href="register.html" class="btn btn-info" role="button">Register</a>
-            <a href="admin.html" class="btn btn-warning" role="button">Contact Admin</a>
+            <a href="register.php" class="btn btn-info" role="button">Register</a>
+            <a href="#" class="btn btn-warning" role="button" data-toggle="modal" data-target="#modalAdmin">Contact Admin</a>        </div>
         </div>
     </div>
 </nav>
@@ -71,6 +71,26 @@
     </div>
 </div>
 <!--End Modals-->
+
+<!--Modal contant admin-->
+<div class="modal fade" id="modalAdmin" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="loginModalLabel">Please login first!</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                To access the ebook, you must first log in as a user. Please register if you don't have an account, and log in if you already have one
+            </div>
+            <div class="modal-footer">
+                <a href="" class="btn btn-secondary" role="button">Cancel</a>
+                <a href="login.php" class="btn btn-success" role="button">Login</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--End Modal contant admin-->
 
 <!--Login page-->
 <div class="container d-flex justify-content-center align-items-center min-vh-100">
@@ -174,6 +194,11 @@
             loginModal.show();
         });
     }
+    $(document).ready(function(){
+        $(".btn-warning").click(function(){
+            $("#modalAdmin").modal('show');
+        });
+    });
 </script>
 </body>
 </html>
