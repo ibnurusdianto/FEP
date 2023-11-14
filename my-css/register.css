@@ -1,0 +1,72 @@
+
+.featured-image img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.text-white.fs-2 {
+    font-size: 2em;
+}
+
+.text-white.text-wrap {
+    font-size: 1em;
+}
+
+.input-group input {
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.btn.btn-lg.btn-primary {
+    background-color: #103cbe;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.btn.btn-lg.btn-light {
+    background-color: white;
+    color: #103cbe;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+@media only screen and (max-width: 768px){
+    .featured-image img {
+        width: 100%;
+    }
+
+    .text-white.fs-2 {
+        font-size: 1.5em;
+    }
+
+    .text-white.text-wrap {
+        font-size: 0.8em;
+    }
+
+    .input-group input {
+        font-size: 0.8em;
+    }
+
+    .btn.btn-lg.btn-primary, .btn.btn-lg.btn-light {
+        font-size: 0.8em;
+    }
+}
+.form-control {
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    color: #000000; /* Black */
+}
+
+.form-check-input {
+    margin-right: 10px;
+}
+
+.form-check-label {
+    color: #CD5C5C; /* Indian Red */
+}
+

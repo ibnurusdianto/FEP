@@ -101,7 +101,7 @@
                 <button class="btn btn-lg btn-light w-100 fs-6"><img src="img/319.jpg" style="width:20px" class="me-2"><small>Sign In with Google</small></button>
             </div>
             <div class="row">
-                <small>Don't have account? <a href="#" class="btn btn-success" role="button">Sign Up</a></small>
+                <small>Don't have account? <a href="register.php" class="btn btn-success" role="button">Sign Up</a></small>
             </div>
         </div>
     </div>
