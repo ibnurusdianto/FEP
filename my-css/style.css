@@ -1,0 +1,247 @@
+.deskripsi-feb {
+    color: #333;
+    font-size: 1.2em;
+}
+
+.img-thumbnail {
+    margin: 10px;
+    transition: transform .2s;
+}
+
+.img-thumbnail:hover {
+    transform: scale(1.1);
+}
+
+.hero-section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/gambar-hero.jpg");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-section img {
+    width: 100%;
+    height: auto;
+    display: block;
+    padding: 1em;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    border: 3px solid white;
+    border-radius: 20px;
+    background-color: rgba(147, 112, 219, 0.8);
+}
+
+.img-fluid {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.img-fluid:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+}
+
+.navbar {
+    box-shadow: 0 4px 2px -2px rgba(0,0,0,.2);
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+}
+
+.navbar-brand, .nav-link {
+    color: #fff !important;
+}
+
+.nav-item:hover {
+    background-color: #f78ca0;
+}
+
+.btn {
+    margin: 10px;
+    box-shadow: 0 4px 2px -2px rgba(0,0,0,.2);
+}
+
+.card-img-top{
+    border-radius: 50%;
+    height: 250px !important;
+    width: 250px !important;
+    position: relative;
+    left: 80px;
+    top: -80px;
+    object-fit: cover;
+}
+.card{
+    border-radius: 0;
+    cursor: pointer;
+    margin-top: 100px !important;
+}
+.card:hover{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+}
+.card-body{
+    margin-top: -50px;
+}
+.bi{
+    font-size: 25px;
+}
+@media only screen and (max-width: 600px) {
+    .card-img-top{
+
+        left: 48px !important;
+
+    }
+}
+
+/* CSS */
+/*.py-3.py-md-5.py-xl-8 {*/
+/*    background-color: #F5F5DC;*/
+/*}*/
+
+.fs-6.text-secondary.mb-2.text-uppercase.text-center {
+    color: #DC143C;
+}
+
+.display-5.text-center {
+    color: #B22222;
+}
+
+.fs-5.text-secondary.mb-5.text-center {
+    color: #CD5C5C;
+}
+
+.w-50.mx-auto.mb-5.mb-xl-9.border-dark-subtle {
+    border-color: #92a8d1;
+}
+
+.text-secondary.bg-light.px-4.py-3.px-md-6.py-md-4.px-lg-8.py-lg-5 {
+    border: 1px solid #92a8d1;
+    transition: transform .2s;
+}
+
+.text-secondary.bg-light.px-4.py-3.px-md-6.py-md-4.px-lg-8.py-lg-5 img {
+    width: 100%;
+    height: auto;
+}
+
+.text-secondary.bg-light.px-4.py-3.px-md-6.py-md-4.px-lg-8.py-lg-5:hover {
+    transform: scale(1.1);
+}
+
+/* CSS */
+.section {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+.section h3 {
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.section h2 {
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.section p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.section .row div {
+    margin-bottom: 30px;
+}
+
+.section .row div img {
+    max-width: 100%;
+    transition: transform .2s;
+}
+
+.section .row div:hover img {
+    transform: scale(1.1);
+}
+
+.section hr {
+    border: 0;
+    height: 1px;
+    background: #333;
+    opacity: 0.1;
+}
+
+/* Footer */
+footer {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Footer Background */
+footer {
+    background-color: #333;
+    color: #ffffff;
+}
+
+/* Footer Links */
+footer a {
+    color: #ffffff;
+}
+
+/* Footer Links on Hover */
+footer a:hover {
+    color: #dddddd;
+}
+
+/* Footer Heading */
+footer .text-uppercase {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+/* Footer Paragraph */
+footer p {
+    margin-bottom: 15px;
+}
+
+/* Footer Social Media Buttons */
+footer .btn-floating {
+    font-size: 22px;
+    height: 40px;
+    line-height: 40px;
+    margin: 10px 2px;
+    text-align: center;
+    width: 40px;
+}
+
+/* Footer Copyright */
+footer .text-center {
+    background-color: #222;
+    /*color: #777;*/
+    padding: 20px 0;
+    text-align: center;
+}
+
+
+
+
+
+
