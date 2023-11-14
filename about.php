@@ -9,32 +9,31 @@
     <link rel="stylesheet" href="css/bootstrap-grid.css">
     <link rel="stylesheet" href="css/bootstrap-utilities.css">
     <link rel="stylesheet" href="my-css/style.css">
-    <link rel="stylesheet" href="my-css/login'.css">
+    <link rel="stylesheet" href="my-css/about.css">
     <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet" />
-    <title>Belajar Bootstrap 5.3</title>
+    <title>About US</title>
 </head>
 <body>
-
 <!--Navbar-->
-<nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">FEP (Free E-Books Portal)</a>
+        <a class="navbar-brand" href="">FEP (Free E-Books Portal)</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#">Home</a>
+                    <a class="nav-link" aria-current="page" href="backup-html/index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="backup-html/about.html">About</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Category Book
+                        E-Books
                     </a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="#">Horror</a></li>
@@ -44,15 +43,15 @@
                     </ul>
                 </li>
             </ul>
-            <button type="button" class="btn btn-success mx-2">Login / Masuk</button>
-            <button type="button" class="btn btn-info mx-2">Register / Daftar</button>
-            <button type="button" class="btn btn-warning mx-2">Contats Admin / Laporkan Masalah</button>
+            <a href="backup-html/login.html" class="btn btn-success" role="button">Login</a>
+            <a href="register.html" class="btn btn-info" role="button">Register</a>
+            <a href="admin.html" class="btn btn-warning" role="button">Contact Admin</a>
         </div>
     </div>
 </nav>
 <!--End Navbar-->
 
-<!--Modal-->
+<!--Modals-->
 <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -64,54 +63,32 @@
                 To access the ebook, you must first log in as a user. Please register if you don't have an account, and log in if you already have one
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Login</button>
+                <a href="" class="btn btn-secondary" role="button">Cencel</a>
+                <a href="login.php" class="btn btn-success" role="button">Login</a>
             </div>
         </div>
     </div>
 </div>
 <!--End Modals-->
 
-<!--Login page-->
-<div class="container d-flex justify-content-center align-items-center min-vh-100">
-    <div class="row border rounded-5 p-3 bg-white shadow box-area">
-        <div class="col-md-6 rounded-4 d-flex justify-content-center align-items-center flex-column left-box" style="background: #103cbe;">
-            <div class="featured-image mb-3">
-                <img src="img/319.jpg" class="img-fluid" style="width: 250px;">
-            </div>
-            <p class="text-white fs-2" style="font-family: 'Courier New', Courier, monospace; font-weight: 600;">Login page</p>
-            <small class="text-white text-wrap text-center" style="width: 17rem;font-family: 'Courier New', Courier, monospace;">Access all E-books for free</small>
+<!--Content-->
+<div class="container">
+    <h1 class="title">About Us</h1>
+    <div class="about-content">
+        <div class="image">
+            <img src="img/me.jpeg" alt="gambar">
         </div>
-        <div class="col-md-6 right-box">
-            <div class="row align-items-center">
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control form-control-lg bg-light fs-6" placeholder="Email address">
-                </div>
-                <div class="input-group mb-1 py-3">
-                    <input type="password" class="form-control form-control-lg bg-light fs-6" placeholder="Password">
-                </div>
-                    <div class="row">
-                        <small>Don't have account? <a href="#" class="btn btn-danger" role="button">Forgot Password</a></small>
-                    </div>
-                </div>
-                <div class="input-group mb-3">
-                    <button class="btn btn-lg btn-primary w-100 fs-6">Login</button>
-                </div>
-                <div class="input-group mb-3">
-                    <button class="btn btn-lg btn-light w-100 fs-6"><img src="img/319.jpg" style="width:20px" class="me-2"><small>Sign In with Google</small></button>
-                </div>
-                <div class="row">
-                    <small>Don't have account? <a href="#" class="btn btn-success" role="button">Sign Up</a></small>
-                </div>
-            </div>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aperiam aut autem beatae corporis, dolor doloremque earum facilis, in iure, libero neque porro quos. Aliquam dolor dolores esse, eum, facere hic incidunt ipsum itaque iusto minima necessitatibus nemo nesciunt non officia, quis rerum similique voluptate voluptatibus! Alias aliquid autem consequatur cum dolor doloremque harum ipsum laudantium libero maxime minima modi mollitia, nihil numquam odio placeat quas quod, reiciendis repellendus reprehenderit repudiandae sequi soluta. Ab dolorem in obcaecati quos tempora unde. A alias architecto commodi ex facilis harum illo illum, ipsam labore magni natus nulla odit quis quos repellendus sequi, vel velit? Aliquam animi, consectetur culpa distinctio ducimus earum explicabo fuga harum ipsa ipsam maiores molestiae nam natus quas, ratione rem similique sint tempore voluptate voluptates. Ab animi architecto at aut autem beatae blanditiis consectetur consequatur consequuntur debitis deleniti deserunt dicta eaque earum et eveniet facilis fugiat, id incidunt inventore iusto maiores maxime nihil non officia omnis porro provident quaerat quam quia ratione reprehenderit saepe tempore temporibus velit, voluptatem voluptates. Aliquid corporis dolorem ex illum maxime natus, quibusdam tempora tempore? Accusamus aliquid, assumenda beatae consequuntur dolore, ducimus eius illo, in libero mollitia nesciunt quisquam quod tenetur! Aperiam asperiores autem et ut.</p>
+            <a href="#" class="readmore">Masuk untuk menikmati aksess FEB</a>
         </div>
     </div>
 </div>
-<!--End Login page-->
+<!--End Content-->
 
 <!--Footer-->
 <footer class="text-center text-lg-start text-white" style="background-color: #929fba">
-    <div class="container p-4 pb-0">
+    <div class="container-fluid p-4 pb-0">
         <section>
             <div class="row">
                 <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
@@ -152,6 +129,7 @@
 </footer>
 <!-- Footer -->
 
+
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
@@ -174,6 +152,36 @@
             loginModal.show();
         });
     }
+    document.querySelector('.title').addEventListener('mouseover', function() {
+        this.style.color = '#ccbb25';
+        this.style.transform = 'scale(1.1)';
+    });
+
+    document.querySelector('.title').addEventListener('mouseout', function() {
+        this.style.color = '';
+        this.style.transform = '';
+    });
+    document.querySelector('.image img').addEventListener('mouseover', function() {
+        this.style.transform = 'scale(1.1)';
+    });
+
+    document.querySelector('.image img').addEventListener('mouseout', function() {
+        this.style.transform = '';
+    });
+    document.querySelector('.readmore').addEventListener('mousedown', function() {
+        this.style.transform = 'scale(0.9)';
+    });
+
+    document.querySelector('.readmore').addEventListener('mouseup', function() {
+        this.style.transform = '';
+    });
+    document.querySelector('.content p').addEventListener('mouseover', function() {
+        this.style.color = '#ccbb25';
+    });
+
+    document.querySelector('.content p').addEventListener('mouseout', function() {
+        this.style.color = '';
+    });
 </script>
 </body>
 </html>

@@ -12,28 +12,28 @@
     <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet" />
-    <title>Belajar Bootstrap 5.3</title>
+    <title>FEB (Free E-Books Portal)</title>
 </head>
 <body>
 
 <!--Navbar-->
 <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">FEP (Free E-Books Portal)</a>
+        <a class="navbar-brand" href="">FEP (Free E-Books Portal)</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#">Home</a>
+                    <a class="nav-link" aria-current="page" href="">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="about.php">About</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Category Book
+                        E-Books
                     </a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="#">Horror</a></li>
@@ -43,9 +43,9 @@
                     </ul>
                 </li>
             </ul>
-            <button type="button" class="btn btn-success mx-2">Login / Masuk</button>
-            <button type="button" class="btn btn-info mx-2">Register / Daftar</button>
-            <button type="button" class="btn btn-warning mx-2">Contats Admin / Laporkan Masalah</button>
+            <a href="login.php" class="btn btn-success" role="button">Login</a>
+            <a href="register.php" class="btn btn-info" role="button">Register</a>
+            <a href="admin.php" class="btn btn-warning" role="button">Contact Admin</a>
         </div>
     </div>
 </nav>
@@ -63,8 +63,8 @@
                 To access the ebook, you must first log in as a user. Please register if you don't have an account, and log in if you already have one
             </div>
             <div class="modal-footer">
-                <a href="index.html" class="btn btn-secondary" role="button">Cencel</a>
-                <a href="login.html" class="btn btn-success" role="button">Login</a>
+                <a href="" class="btn btn-secondary" role="button">Cencel</a>
+                <a href="login.php" class="btn btn-success" role="button">Login</a>
             </div>
         </div>
     </div>
