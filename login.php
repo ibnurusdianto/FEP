@@ -16,7 +16,28 @@
     <title>FEB (Free E-Books Portal) - Login page</title>
 </head>
 <body>
-
+<?php
+//
+//include_once "../feb/back-end/config.php";
+//
+//$username = $_POST["username"];
+//$password = $_POST["password"];
+//
+//// Menggunakan prepared statements untuk mencegah SQL injection
+//$stmt = $koneksi->prepare("SELECT * FROM users WHERE username=? AND password=?");
+//$stmt->bind_param("ss", $username, $password);
+//$stmt->execute();
+//$result = $stmt->get_result();
+//$data_fetch = $result->fetch_assoc();
+//
+//if ($data_fetch) {
+//    session_start();
+////    $_SESSION["username"] = $username;
+//    header("location: ../../index.php");
+//} else {
+//    header("location: ../../error.php"); // Ganti dengan lokasi file yang benar
+//}
+//?>
 <!--Navbar-->
 <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
     <div class="container-fluid">
@@ -103,20 +124,22 @@
             <small class="text-white text-wrap text-center" style="width: 17rem;font-family: 'Courier New', Courier, monospace;">Access all E-books for free</small>
         </div>
         <div class="col-md-6 right-box">
-            <div class="row align-items-center">
+            <form action="back-end/test-prosess/process_login.php" method="post">
+                <div class="row align-items-center">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control form-control-lg bg-light fs-6" placeholder="Input Username" name="username">
+                    </div>
+                    <div class="input-group mb-3 py-3">
+                        <input type="password" class="form-control form-control-lg bg-light fs-6" placeholder="Input Password" name="password">
+                    </div>
+                    <div class="row">
+                        <small>Forgot password? <a href="#" class="btn btn-danger" role="button">Forgot Password</a></small>
+                    </div>
+                </div>
                 <div class="input-group mb-3">
-                    <input type="text" class="form-control form-control-lg bg-light fs-6" placeholder="Email address">
+                    <button class="btn btn-lg btn-primary w-100 fs-6" type="submit">Login</button>
                 </div>
-                <div class="input-group mb-1 py-3">
-                    <input type="password" class="form-control form-control-lg bg-light fs-6" placeholder="Password">
-                </div>
-                <div class="row">
-                    <small>Forgot password? <a href="#" class="btn btn-danger" role="button">Forgot Password</a></small>
-                </div>
-            </div>
-            <div class="input-group mb-3">
-                <button class="btn btn-lg btn-primary w-100 fs-6">Login</button>
-            </div>
+            </form>
             <div class="input-group mb-3">
                 <button class="btn btn-lg btn-light w-100 fs-6"><img src="img/319.jpg" style="width:20px" class="me-2"><small>Sign In with Google</small></button>
             </div>
@@ -126,8 +149,8 @@
         </div>
     </div>
 </div>
-</div>
 <!--End Login page-->
+
 
 <!--Footer-->
 <footer class="text-center text-lg-start text-white" style="background-color: #929fba">
